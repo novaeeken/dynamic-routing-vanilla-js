@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Homepage</h1>
+<button type="button" id="next-page">NAAR ANDERE PAGINA</button>
+
+<script>
+    const button = document.getElementById('next-page');
+    button.addEventListener('click', navigateToNextPage);
+
+    function navigateToNextPage(e) {
+      e.preventDefault();
+      // GA NAAR PAGINA newpage.html en geef de parameter recipe mee met waarde donuts
+      window.location.replace('/newpage.html?recipe=donuts');
+    }
+</script>
+</body>
+</html>
